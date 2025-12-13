@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilbo - Music Artist</title>
+    <meta name="description" content="Official website of Kilbo - Listen to music on Spotify, Apple Music, and all streaming platforms. Subscribe for exclusive updates.">
+    <meta name="keywords" content="Kilbo, Kilbo music, artist, streaming music">
+    <link rel="canonical" href="https://kilbo.music">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kilbo.music">
+    <meta property="og:title" content="Kilbo - Music Artist">
+    <meta property="og:description" content="Official website of Kilbo - Listen to music on all streaming platforms">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .logo {
+            font-size: 72px;
+            font-weight: 900;
+            margin-bottom: 10px;
+            letter-spacing: 8px;
+            background: linear-gradient(45deg, #667eea, #764ba2, #f093fb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: glow 3s ease-in-out infinite;
+        }
+        
+        @keyframes glow {
+            0%, 100% { filter: brightness(1); }
+            50% { filter: brightness(1.3); }
+        }
+        
+        .tagline {
+            font-size: 18px;
+            color: #b8b8d1;
+            margin-bottom: 50px;
+            letter-spacing: 2px;
+        }
+        
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 50px;
+        }
+        
+        .link-btn {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 18px 32px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .link-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        .link-btn:active {
+            transform: translateY(0);
+        }
+        
+        .email-signup {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+        
+        .email-signup h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        
+        .email-signup p {
+            color: #b8b8d1;
+            margin-bottom: 24px;
+            font-size: 14px;
+        }
+        
+        .email-form {
+            display: flex;
+            gap: 12px;
+            flex-direction: column;
+        }
+        
+        .email-input {
+            padding: 16px 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        
+        .email-input::placeholder {
+            color: #b8b8d1;
+        }
+        
+        .email-input:focus {
+            border-color: #667eea;
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .submit-btn {
+            padding: 16px 32px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border: none;
+            border-radius: 50px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.5);
+        }
+        
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+        
+        .success-message {
+            display: none;
+            margin-top: 16px;
+            padding: 12px;
+            background: rgba(72, 187, 120, 0.2);
+            border: 1px solid rgba(72, 187, 120, 0.4);
+            border-radius: 12px;
+            color: #9ae6b4;
+        }
+        
+        .social-links {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+        }
+        
+        .social-icon {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 24px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .social-icon:hover {
+            color: #fff;
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 640px) {
+            .logo {
+                font-size: 48px;
+                letter-spacing: 4px;
+            }
+            
+            .email-signup {
+                padding: 30px 20px;
+            }
+        }
+        
+        .background-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.3;
+        }
+        
+        .floating-note {
+            position: absolute;
+            font-size: 40px;
+            opacity: 0.1;
+            animation: float 6s infinite ease-in-out;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-animation">
+        <div class="floating-note" style="top: 10%; left: 10%;">♪</div>
+        <div class="floating-note" style="top: 70%; right: 15%; animation-delay: 1s;">♫</div>
+        <div class="floating-note" style="top: 40%; right: 20%; animation-delay: 2s;">♪</div>
+        <div class="floating-note" style="bottom: 20%; left: 15%; animation-delay: 1.5s;">♫</div>
+    </div>
+    
+    <div class="container">
+        <h1 class="logo">KILBO</h1>
+        <p class="tagline">MUSIC ARTIST</p>
+        
+        <div class="links">
+            <a href="https://open.spotify.com/artist/YOUR_ARTIST_ID" class="link-btn" target="_blank" rel="noopener">
+                🎵 Listen on Spotify
+            </a>
+            <a href="https://music.apple.com/artist/YOUR_ARTIST_ID" class="link-btn" target="_blank" rel="noopener">
+                🍎 Listen on Apple Music
+            </a>
+            <a href="https://www.youtube.com/@YOUR_CHANNEL" class="link-btn" target="_blank" rel="noopener">
+                📺 YouTube
+            </a>
+            <a href="https://soundcloud.com/YOUR_PROFILE" class="link-btn" target="_blank" rel="noopener">
+                🔊 SoundCloud
+            </a>
+        </div>
+        
+        <div class="email-signup">
+            <h2>Join the Family</h2>
+            <p>Get exclusive updates, new releases, and behind-the-scenes content delivered to your inbox.</p>
+            <form class="email-form" id="emailForm">
+                <input 
+                    type="email" 
+                    class="email-input" 
+                    placeholder="Enter your email" 
+                    required
+                    id="emailInput"
+                >
+                <button type="submit" class="submit-btn">Subscribe</button>
+            </form>
+            <div class="success-message" id="successMessage">
+                ✓ Thanks for subscribing! Check your email to confirm.
+            </div>
+        </div>
+        
+        <div class="social-links">
+            <a href="https://instagram.com/YOUR_HANDLE" class="social-icon" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+            <a href="https://twitter.com/YOUR_HANDLE" class="social-icon" target="_blank" rel="noopener" aria-label="Twitter">🐦</a>
+            <a href="https://tiktok.com/@YOUR_HANDLE" class="social-icon" target="_blank" rel="noopener" aria-label="TikTok">🎬</a>
+        </div>
+    </div>
+    
+    <script>
+        const form = document.getElementById('emailForm');
+        const successMessage = document.getElementById('successMessage');
+        const emailInput = document.getElementById('emailInput');
+        
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = emailInput.value;
+            
+            // TODO: Replace this with your actual email service (Mailchimp, ConvertKit, etc.)
+            // For now, this is a placeholder that shows the success message
+            console.log('Email submitted:', email);
+            
+            // Show success message
+            successMessage.style.display = 'block';
+            emailInput.value = '';
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 5000);
+            
+            // Example integration with Mailchimp, ConvertKit, or other services:
+            // fetch('YOUR_EMAIL_SERVICE_ENDPOINT', {
+            //     method: 'POST',
+            //     headers: { 'Content-Type': 'application/json' },
+            //     body: JSON.stringify({ email: email })
+            // });
+        });
+    </script>
+</body>
+</html>
