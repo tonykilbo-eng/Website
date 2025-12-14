@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,470 +8,476 @@
     <meta name="description" content="Official website of Kilbo - Chill Dance Music Artist. Listen on Spotify, Apple Music, YouTube, and SoundCloud. Subscribe for exclusive updates and new releases.">
     <meta name="keywords" content="Kilbo, Kilbo music, chill dance music, electronic music artist, streaming music, dance producer">
     <link rel="canonical" href="https://kilbo.music">
-    
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kilbo.music">
-    <meta property="og:title" content="Kilbo - Chill Dance Artist">
-    <meta property="og:description" content="Official website of Kilbo - Listen to music on all streaming platforms">
-    <meta property="og:image" content="https://kilbo.music/social-preview.jpg">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Kilbo - Chill Dance Artist">
-    <meta name="twitter:description" content="Official website of Kilbo - Listen to chill dance music on all streaming platforms">
-    <meta name="twitter:image" content="https://kilbo.music/social-preview.jpg">
-    
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MusicGroup",
-      "name": "Kilbo",
-      "genre": "Chill Dance Music",
-      "url": "https://kilbo.music",
-      "sameAs": [
-        "https://open.spotify.com/artist/2k4nlpOiZC9SdTYLOPj1cS",
-        "https://music.apple.com/us/artist/kilbo/1678841328",
-        "https://www.youtube.com/@kilbomusic",
-        "https://soundcloud.com/kilbomusic",
-        "https://instagram.com/kilbomusic",
-        "https://tiktok.com/@kilbomusic"
-      ]
+
+```
+<!-- Open Graph / Social Media -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kilbo.music">
+<meta property="og:title" content="Kilbo - Chill Dance Artist">
+<meta property="og:description" content="Official website of Kilbo - Listen to music on all streaming platforms">
+<meta property="og:image" content="https://kilbo.music/social-preview.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kilbo - Chill Dance Artist">
+<meta name="twitter:description" content="Official website of Kilbo - Listen to chill dance music on all streaming platforms">
+<meta name="twitter:image" content="https://kilbo.music/social-preview.jpg">
+
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "name": "Kilbo",
+  "genre": "Chill Dance Music",
+  "url": "https://kilbo.music",
+  "sameAs": [
+    "https://open.spotify.com/artist/2k4nlpOiZC9SdTYLOPj1cS",
+    "https://music.apple.com/us/artist/kilbo/1678841328",
+    "https://www.youtube.com/@kilbomusic",
+    "https://soundcloud.com/kilbomusic",
+    "https://instagram.com/kilbomusic",
+    "https://tiktok.com/@kilbomusic"
+  ]
+}
+</script>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-    </script>
     
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #3d2963;
-            background-image: url('Background.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            color: #fff;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            overflow-x: hidden;
-            position: relative;
-        }
-        
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.1);
-            z-index: 0;
-            pointer-events: none;
-        }
-        
-        .container {
-            max-width: 600px;
-            width: 100%;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .logo-container {
-            margin-bottom: 20px;
-        }
-        
-        .logo-image {
-            max-width: 280px;
-            width: 100%;
-            height: auto;
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        background-color: #3d2963;
+        background-image: url('Background.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #fff;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        overflow-x: hidden;
+        position: relative;
+    }
+    
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.1);
+        z-index: 0;
+        pointer-events: none;
+    }
+    
+    .container {
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .logo-container {
+        margin-bottom: 20px;
+    }
+    
+    .logo-image {
+        max-width: 280px;
+        width: 100%;
+        height: auto;
+        filter: drop-shadow(0 0 30px rgba(147, 112, 219, 0.6));
+        animation: logoGlow 3s ease-in-out infinite;
+    }
+    
+    @keyframes logoGlow {
+        0%, 100% { 
             filter: drop-shadow(0 0 30px rgba(147, 112, 219, 0.6));
-            animation: logoGlow 3s ease-in-out infinite;
         }
-        
-        @keyframes logoGlow {
-            0%, 100% { 
-                filter: drop-shadow(0 0 30px rgba(147, 112, 219, 0.6));
-            }
-            50% { 
-                filter: drop-shadow(0 0 40px rgba(147, 112, 219, 0.8));
-            }
+        50% { 
+            filter: drop-shadow(0 0 40px rgba(147, 112, 219, 0.8));
+        }
+    }
+    
+    .tagline {
+        font-size: 18px;
+        color: #ffffff;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+        opacity: 0.95;
+    }
+    
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 0;
+    }
+    
+    .link-btn {
+        background: rgba(61, 42, 99, 0.5);
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        color: #ffffff;
+        padding: 18px 32px;
+        text-decoration: none;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .link-btn::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(61, 42, 99, 0.6);
+        transform: translate(-50%, -50%);
+        transition: width 0.6s, height 0.6s;
+    }
+    
+    .link-btn:hover::before {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .link-btn:hover {
+        background: rgba(61, 42, 99, 0.8);
+        border-color: rgba(255, 255, 255, 0.6);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 30px rgba(61, 42, 99, 0.6);
+    }
+    
+    .link-btn span {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .link-btn:active {
+        transform: translateY(0);
+    }
+    
+    .email-signup {
+        background: rgba(61, 42, 99, 0.6);
+        backdrop-filter: blur(15px);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        padding: 40px;
+        border-radius: 24px;
+        margin-top: 40px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+    
+    .email-signup h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+    
+    .email-signup p {
+        color: #ffffff;
+        margin-bottom: 24px;
+        font-size: 14px;
+        opacity: 0.9;
+    }
+    
+    .email-form {
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+    }
+    
+    .email-input {
+        padding: 16px 24px;
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        border-radius: 50px;
+        background: rgba(61, 42, 99, 0.4);
+        color: #ffffff;
+        font-size: 16px;
+        outline: none;
+        transition: all 0.3s ease;
+    }
+    
+    .email-input::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    
+    .email-input:focus {
+        border-color: rgba(255, 255, 255, 0.7);
+        background: rgba(61, 42, 99, 0.6);
+        box-shadow: 0 0 20px rgba(61, 42, 99, 0.5);
+    }
+    
+    .submit-btn {
+        padding: 16px 32px;
+        background: #3d2a63;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .submit-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 30px rgba(61, 42, 99, 0.7);
+        background: #4d3a73;
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .submit-btn:active {
+        transform: translateY(0);
+    }
+    
+    .socials-label {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 50px;
+        margin-bottom: 8px;
+        opacity: 0.9;
+        letter-spacing: 1px;
+    }
+    
+    .social-links {
+        margin-top: 0;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+    
+    .about-section {
+        margin-top: 16px;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    
+    .about-toggle {
+        background: rgba(61, 42, 99, 0.5);
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        color: #ffffff;
+        padding: 18px 32px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .about-toggle:hover {
+        background: rgba(61, 42, 99, 0.7);
+        border-color: rgba(255, 255, 255, 0.6);
+    }
+    
+    .about-toggle .arrow {
+        transition: transform 0.3s ease;
+        font-size: 20px;
+    }
+    
+    .about-toggle.active .arrow {
+        transform: rotate(180deg);
+    }
+    
+    .about-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+        margin-top: 20px;
+    }
+    
+    .about-content.active {
+        max-height: 2000px;
+    }
+    
+    .about-inner {
+        background: rgba(61, 42, 99, 0.6);
+        backdrop-filter: blur(15px);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        padding: 40px;
+        border-radius: 24px;
+        text-align: center;
+    }
+    
+    .about-image {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 16px;
+        margin: 0 auto 30px;
+        display: block;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+    
+    .about-inner h3 {
+        color: #ffffff;
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .about-inner p {
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 15px;
+        opacity: 0.95;
+        text-align: center;
+    }
+    
+    .social-icon {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 28px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    }
+    
+    .social-icon:hover {
+        color: #ffffff;
+        transform: translateY(-3px);
+        filter: drop-shadow(0 0 15px rgba(61, 42, 99, 0.8));
+    }
+    
+    @media (max-width: 640px) {
+        .logo-image {
+            max-width: 200px;
         }
         
         .tagline {
-            font-size: 18px;
-            color: #ffffff;
-            margin-bottom: 50px;
-            letter-spacing: 2px;
-            opacity: 0.95;
-        }
-        
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            margin-bottom: 0;
-        }
-        
-        .link-btn {
-            background: rgba(61, 42, 99, 0.5);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.4);
-            color: #ffffff;
-            padding: 18px 32px;
-            text-decoration: none;
-            border-radius: 50px;
             font-size: 16px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .link-btn::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 0;
-            height: 0;
-            border-radius: 50%;
-            background: rgba(61, 42, 99, 0.6);
-            transform: translate(-50%, -50%);
-            transition: width 0.6s, height 0.6s;
-        }
-        
-        .link-btn:hover::before {
-            width: 300px;
-            height: 300px;
-        }
-        
-        .link-btn:hover {
-            background: rgba(61, 42, 99, 0.8);
-            border-color: rgba(255, 255, 255, 0.6);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(61, 42, 99, 0.6);
-        }
-        
-        .link-btn span {
-            position: relative;
-            z-index: 1;
-        }
-        
-        .link-btn:active {
-            transform: translateY(0);
         }
         
         .email-signup {
-            background: rgba(61, 42, 99, 0.6);
-            backdrop-filter: blur(15px);
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            padding: 40px;
-            border-radius: 24px;
-            margin-top: 40px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            padding: 30px 20px;
         }
-        
-        .email-signup h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: #ffffff;
-        }
-        
-        .email-signup p {
-            color: #ffffff;
-            margin-bottom: 24px;
-            font-size: 14px;
-            opacity: 0.9;
-        }
-        
-        .email-form {
-            display: flex;
-            gap: 12px;
-            flex-direction: column;
-        }
-        
-        .email-input {
-            padding: 16px 24px;
-            border: 2px solid rgba(255, 255, 255, 0.4);
-            border-radius: 50px;
-            background: rgba(61, 42, 99, 0.4);
-            color: #ffffff;
-            font-size: 16px;
-            outline: none;
-            transition: all 0.3s ease;
-        }
-        
-        .email-input::placeholder {
-            color: rgba(255, 255, 255, 0.7);
-        }
-        
-        .email-input:focus {
-            border-color: rgba(255, 255, 255, 0.7);
-            background: rgba(61, 42, 99, 0.6);
-            box-shadow: 0 0 20px rgba(61, 42, 99, 0.5);
-        }
-        
-        .submit-btn {
-            padding: 16px 32px;
-            background: #3d2a63;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-radius: 50px;
-            color: #ffffff;
-            font-size: 16px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(61, 42, 99, 0.7);
-            background: #4d3a73;
-            border-color: rgba(255, 255, 255, 0.5);
-        }
-        
-        .submit-btn:active {
-            transform: translateY(0);
-        }
-        
-        .socials-label {
-            color: #ffffff;
-            font-size: 16px;
-            font-weight: 600;
-            margin-top: 50px;
-            margin-bottom: 8px;
-            opacity: 0.9;
-            letter-spacing: 1px;
-        }
-        
-        .social-links {
-            margin-top: 0;
-            margin-bottom: 30px;
-            display: flex;
-            justify-content: center;
-            gap: 24px;
-        }
-        
-        .about-section {
-            margin-top: 16px;
-            margin-bottom: 0;
-            width: 100%;
-        }
-        
-        .about-toggle {
-            background: rgba(61, 42, 99, 0.5);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.4);
-            color: #ffffff;
-            padding: 18px 32px;
-            border-radius: 50px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-        }
-        
-        .about-toggle:hover {
-            background: rgba(61, 42, 99, 0.7);
-            border-color: rgba(255, 255, 255, 0.6);
-        }
-        
-        .about-toggle .arrow {
-            transition: transform 0.3s ease;
-            font-size: 20px;
-        }
-        
-        .about-toggle.active .arrow {
-            transform: rotate(180deg);
-        }
-        
-        .about-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease;
-            margin-top: 20px;
-        }
-        
-        .about-content.active {
-            max-height: 2000px;
-        }
-        
-        .about-inner {
-            background: rgba(61, 42, 99, 0.6);
-            backdrop-filter: blur(15px);
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            padding: 40px;
-            border-radius: 24px;
-            text-align: center;
-        }
-        
-        .about-image {
-            width: 100%;
-            max-width: 500px;
-            height: auto;
-            border-radius: 16px;
-            margin: 0 auto 30px;
-            display: block;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-        }
-        
-        .about-inner h3 {
-            color: #ffffff;
-            font-size: 28px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        
-        .about-inner p {
-            color: #ffffff;
-            font-size: 16px;
-            line-height: 1.8;
-            margin-bottom: 15px;
-            opacity: 0.95;
-            text-align: center;
-        }
-        
-        .social-icon {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 28px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-        }
-        
-        .social-icon:hover {
-            color: #ffffff;
-            transform: translateY(-3px);
-            filter: drop-shadow(0 0 15px rgba(61, 42, 99, 0.8));
-        }
-        
-        @media (max-width: 640px) {
-            .logo-image {
-                max-width: 200px;
-            }
-            
-            .tagline {
-                font-size: 16px;
-            }
-            
-            .email-signup {
-                padding: 30px 20px;
-            }
-        }
-        
-        .floating-note {
-            position: fixed;
-            font-size: 40px;
-            opacity: 0.08;
-            animation: float 8s infinite ease-in-out;
-            color: #ffffff;
-            z-index: 0;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-30px) rotate(15deg); }
-        }
-    </style>
+    }
+    
+    .floating-note {
+        position: fixed;
+        font-size: 40px;
+        opacity: 0.08;
+        animation: float 8s infinite ease-in-out;
+        color: #ffffff;
+        z-index: 0;
+    }
+    
+    @keyframes float {
+        0%, 100% { transform: translateY(0) rotate(0deg); }
+        50% { transform: translateY(-30px) rotate(15deg); }
+    }
+</style>
+```
+
 </head>
 <body>
+
+```
+<div class="container">
+    <div class="logo-container">
+        <img src="kilbo-logo.png" alt="Kilbo Logo" class="logo-image">
+    </div>
+    <p class="tagline">Chill Dance Music Artist</p>
     
-    <div class="container">
-        <div class="logo-container">
-            <img src="kilbo-logo.png" alt="Kilbo Logo" class="logo-image">
-        </div>
-        <p class="tagline">Chill Dance Music Artist</p>
-        
-        <div class="links">
-            <a href="https://open.spotify.com/artist/2k4nlpOiZC9SdTYLOPj1cS?si=djGPf_Q0QoaxxuelUWvNUA" class="link-btn" target="_blank" rel="noopener">
-                <span>🎵 Listen on Spotify</span>
-            </a>
-            <a href="https://music.apple.com/us/artist/kilbo/1678841328" class="link-btn" target="_blank" rel="noopener">
-                <span>🍎 Listen on Apple Music</span>
-            </a>
-            <a href="https://www.youtube.com/@kilbomusic" class="link-btn" target="_blank" rel="noopener">
-                <span>📺 YouTube</span>
-            </a>
-            <a href="https://soundcloud.com/kilbomusic" class="link-btn" target="_blank" rel="noopener">
-                <span>🔊 SoundCloud</span>
-            </a>
-        </div>
-        
-        <div class="about-section" id="about">
-            <button class="about-toggle" onclick="toggleAbout()">
-                <span>🖤 About Kilbo</span>
-            </button>
-            <div class="about-content" id="aboutContent">
-                <div class="about-inner">
-                    <img src="about-image.jpg" alt="Kilbo" class="about-image">
-                    <h3>About Kilbo</h3>
-                    <p>Tony Kilbo makes chill dance music that's easy to move to without demanding attention. Built on funk-leaning grooves, guitar lines, and restrained modern production, his tracks unfold patiently—letting rhythm do most of the work while melodies and textures drift in and out.</p>
-                    <p>There's a steady pull between nature and technology in his sound. Guitar, bass, and understated synths sit alongside clean digital edges, giving the music a grounded feel that still leans forward. It's music shaped as much by quiet repetition and space as it is by software and signal chains.</p>
-                    <p>Kilbo releases independently and treats music less like a content cycle and more like a long game. The focus isn't on chasing trends or moments, but on consistency—making songs that hold up over time and feel good to return to.</p>
-                </div>
+    <div class="links">
+        <a href="https://open.spotify.com/artist/2k4nlpOiZC9SdTYLOPj1cS?si=djGPf_Q0QoaxxuelUWvNUA" class="link-btn" target="_blank" rel="noopener">
+            <span>🎵 Listen on Spotify</span>
+        </a>
+        <a href="https://music.apple.com/us/artist/kilbo/1678841328" class="link-btn" target="_blank" rel="noopener">
+            <span>🍎 Listen on Apple Music</span>
+        </a>
+        <a href="https://www.youtube.com/@kilbomusic" class="link-btn" target="_blank" rel="noopener">
+            <span>📺 YouTube</span>
+        </a>
+        <a href="https://soundcloud.com/kilbomusic" class="link-btn" target="_blank" rel="noopener">
+            <span>🔊 SoundCloud</span>
+        </a>
+    </div>
+    
+    <div class="about-section" id="about">
+        <button class="about-toggle" onclick="toggleAbout()">
+            <span>🖤 About Kilbo</span>
+        </button>
+        <div class="about-content" id="aboutContent">
+            <div class="about-inner">
+                <img src="about-image.jpg" alt="Kilbo" class="about-image">
+                <h3>About Kilbo</h3>
+                <p>Tony Kilbo makes chill dance music that's easy to move to without demanding attention. Built on funk-leaning grooves, guitar lines, and restrained modern production, his tracks unfold patiently—letting rhythm do most of the work while melodies and textures drift in and out.</p>
+                <p>There's a steady pull between nature and technology in his sound. Guitar, bass, and understated synths sit alongside clean digital edges, giving the music a grounded feel that still leans forward. It's music shaped as much by quiet repetition and space as it is by software and signal chains.</p>
+                <p>Kilbo releases independently and treats music less like a content cycle and more like a long game. The focus isn't on chasing trends or moments, but on consistency—making songs that hold up over time and feel good to return to.</p>
             </div>
-        </div>
-        
-        <div class="links">
-            <a href="mailto:contact@kilbo.music" class="link-btn">
-                <span>✉️ Contact</span>
-            </a>
-        </div>
-        
-        <div class="email-signup">
-            <h2>Join the Family</h2>
-            <p>Get exclusive updates and reflections from Kilbo, sent only when there's something worth sharing.</p>
-            <form action="https://music.us5.list-manage.com/subscribe/post?u=85effab45b05028abd9533a5c&amp;id=561a93b9ce&amp;f_id=0025beedf0" method="post" class="email-form" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
-                <input 
-                    type="email" 
-                    name="EMAIL"
-                    class="email-input" 
-                    placeholder="Enter your email" 
-                    required
-                    id="mce-EMAIL"
-                >
-                <!-- Bot prevention -->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                    <input type="text" name="b_85effab45b05028abd9533a5c_561a93b9ce" tabindex="-1" value="">
-                </div>
-                <button type="submit" name="subscribe" class="submit-btn">Subscribe</button>
-            </form>
-        </div>
-        
-        <p class="socials-label">Socials:</p>
-        <div class="social-links">
-            <a href="https://instagram.com/kilbomusic" class="social-icon" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
-            <a href="https://tiktok.com/@kilbomusic" class="social-icon" target="_blank" rel="noopener" aria-label="TikTok">🎬</a>
         </div>
     </div>
     
-    <script>
-        // Toggle About section
-        function toggleAbout() {
-            const content = document.getElementById('aboutContent');
-            const toggle = document.querySelector('.about-toggle');
-            
-            content.classList.toggle('active');
-            toggle.classList.toggle('active');
-        }
+    <div class="links">
+        <a href="mailto:contact@kilbo.music" class="link-btn">
+            <span>✉️ Contact</span>
+        </a>
+    </div>
+    
+    <div class="email-signup">
+        <h2>Join the Family</h2>
+        <p>Get exclusive updates and reflections from Kilbo, sent only when there's something worth sharing.</p>
+        <form action="https://music.us5.list-manage.com/subscribe/post?u=85effab45b05028abd9533a5c&amp;id=561a93b9ce&amp;f_id=0025beedf0" method="post" class="email-form" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+            <input 
+                type="email" 
+                name="EMAIL"
+                class="email-input" 
+                placeholder="Enter your email" 
+                required
+                id="mce-EMAIL"
+            >
+            <!-- Bot prevention -->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_85effab45b05028abd9533a5c_561a93b9ce" tabindex="-1" value="">
+            </div>
+            <button type="submit" name="subscribe" class="submit-btn">Subscribe</button>
+        </form>
+    </div>
+    
+    <p class="socials-label">Socials:</p>
+    <div class="social-links">
+        <a href="https://instagram.com/kilbomusic" class="social-icon" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+        <a href="https://tiktok.com/@kilbomusic" class="social-icon" target="_blank" rel="noopener" aria-label="TikTok">🎬</a>
+    </div>
+</div>
+
+<script>
+    // Toggle About section
+    function toggleAbout() {
+        const content = document.getElementById('aboutContent');
+        const toggle = document.querySelector('.about-toggle');
         
-        // Mailchimp form is now integrated - it will submit directly to Mailchimp
-        // Users will be redirected to Mailchimp's confirmation page after subscribing
-    </script>
+        content.classList.toggle('active');
+        toggle.classList.toggle('active');
+    }
+    
+    // Mailchimp form is now integrated - it will submit directly to Mailchimp
+    // Users will be redirected to Mailchimp's confirmation page after subscribing
+</script>
+```
+
 </body>
 </html>
