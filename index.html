@@ -441,15 +441,20 @@
         <div class="email-signup">
             <h2>Join the Family</h2>
             <p>Get exclusive updates and reflections from Kilbo, sent only when there's something worth sharing.</p>
-            <form action="https://assets.mailerlite.com/jsonp/1985195/forms/173906015811536630/subscribe" method="post" class="email-form" target="_blank">
+            <form action="https://music.us5.list-manage.com/subscribe/post?u=85effab45b05028abd9533a5c&amp;id=561a93b9ce&amp;f_id=0025beedf0" method="post" class="email-form" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
                 <input 
                     type="email" 
-                    name="fields[email]"
+                    name="EMAIL"
                     class="email-input" 
                     placeholder="Enter your email" 
                     required
+                    id="mce-EMAIL"
                 >
-                <button type="submit" class="submit-btn">Subscribe</button>
+                <!-- Bot prevention -->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_85effab45b05028abd9533a5c_561a93b9ce" tabindex="-1" value="">
+                </div>
+                <button type="submit" name="subscribe" class="submit-btn">Subscribe</button>
             </form>
         </div>
         
@@ -469,6 +474,9 @@
             content.classList.toggle('active');
             toggle.classList.toggle('active');
         }
+        
+        // Mailchimp form is now integrated - it will submit directly to Mailchimp
+        // Users will be redirected to Mailchimp's confirmation page after subscribing
     </script>
 </body>
 </html>
